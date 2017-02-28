@@ -31,7 +31,7 @@ var date = new Date();
     var hour = date.getHours();
     var sms;
     sms = (hour < 12 ? "Good morning! Your promocode is AM123" : "Hello! Your promocode is PM456");
-	var mobileNumber = req.body.mobile;
+	var mobileNumber = req.body.phone;
 
 	
 	res.writeHead(200, {'Content-Type': 'text/plain'});
